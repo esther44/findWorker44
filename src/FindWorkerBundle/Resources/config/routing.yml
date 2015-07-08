@@ -1,3 +1,4 @@
-find_worker_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: FindWorkerBundle:Default:index }
+#Jeu de route project
+find_worker_project:
+    resource: "@FindWorkerBundle/Resources/config/routing/project.yml"
+    prefix:   /project

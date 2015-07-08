@@ -1,0 +1,3 @@
+find_worker_new:
+    path:     /new
+    defaults: { _controller: FindWorkerBundle:Project:new }
