@@ -18,7 +18,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header page-home">
         <h1 class="logo">
             <a href="./">
                 <img src="assets/images/general/logo.png" alt="FindWorker"/>
@@ -98,7 +98,9 @@
                         </a>
                     </li>
                     <li class="partners-item">
-                        <img src="assets/images/partners/behance.png" alt="Behance"/>
+                        <a href="http://behance.net" target="_blank">
+                            <img src="assets/images/partners/behance.png" alt="Behance"/>
+                        </a>
                     </li>
                 </ul>
             </div>

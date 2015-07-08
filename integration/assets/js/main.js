@@ -35,6 +35,8 @@ $(document).ready(function () {
         });
 
         global.menuIsOpen = true;
+
+        $('html, body').addClass('overflow');
     }
 
     /**
@@ -59,6 +61,8 @@ $(document).ready(function () {
         global.$menu.delay(400).fadeOut(400);
 
         global.menuIsOpen = false;
+
+        $('html, body').removeClass('overflow');
     }
 
     global.$menuIcon.on('click touchend', function(){
@@ -69,7 +73,7 @@ $(document).ready(function () {
         closeMenu();
     });
 
-    $(document).on('click touchstart touchend', function(e){
+    $(document).on('.disable', 'click touchstart touchend', function(e){
         e.preventDefault();
     });
 

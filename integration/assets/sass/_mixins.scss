@@ -13,3 +13,9 @@
   -ms-transition: $content;
   transition: $content;
 }
+
+@mixin border-radius($val){
+  -webkit-border-radius: $val $val $val $val;
+  -moz-border-radius: $val $val $val $val;
+  border-radius: $val $val $val $val;
+}
