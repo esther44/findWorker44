@@ -47,4 +47,14 @@ class ProjectController extends Controller
         ['form'=>$form->createView()]
         );
 	}
+
+    public function listAction(Request $request)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $listProject = $this->getDoctrine()->getRepository('FindWorkerBundle:Project')->findAll();
+
+        return $this->render('FindWorkerBundle:Project:list.html.twig', array(
+            'projects'=> $listProject
+        ));
+    }
 }

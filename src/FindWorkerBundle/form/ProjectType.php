@@ -32,7 +32,17 @@ class ProjectType extends AbstractType
                     'class' => 'form-control',
                     'cols' => 10,
                     'rows' => 5,
-                    'placeholder' => 'Description du projet',
+                    'placeholder' => 'Description du projet'
+                )
+            ))
+            ->add('skills', null, array(
+                'label' => 'Les compétences requises (mettre un espace entre chaque compétence)',
+                'required' => true,
+                'attr' => array(
+                    'class' => 'form-control',
+                    'cols' => 10,
+                    'rows' => 5,
+                    'placeholder' => 'Compétences requises'
                 )
             ))
             
@@ -41,7 +51,6 @@ class ProjectType extends AbstractType
                     'class' => 'btn btn-primary'
                 )
             ))
-
         ;
     }
 

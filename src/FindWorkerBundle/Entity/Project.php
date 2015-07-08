@@ -34,6 +34,13 @@ class Project
      */
     private $description;
 
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="skills", type="text", nullable=true)
+     */
+    private $skills;
+
 
     /**
      * Constructor
@@ -98,7 +105,28 @@ class Project
         return $this->description;
     }
 
+    /**
+     * Set skills
+     *
+     * @param string $skills
+     * @return Project
+     */
+    public function setSkills($skills)
+    {
+        $this->skills = $skills;
 
+        return $this;
+    }
+
+    /**
+     * Get skills
+     *
+     * @return string
+     */
+    public function getSkills()
+    {
+        return $this->skills;
+    }
 
     /**
      * Add project
